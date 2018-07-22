@@ -1,0 +1,51 @@
+<!--Veilingen (onze aanbiedingen) -->
+<div class="container">
+  <div class="border-line">
+    <h1 class="main-title">Zoek zelf uw favoriete producten</h1>
+  </div>
+  <div class="row">
+    <div class="card b-width">
+      <h1 class="card-title">Categorie</h1>
+      <div class="styled-select slate">
+        <select>
+          <option *ngFor="let category of categories" [value]="category.id"> {{category.name}}</option>
+        </select>
+      </div>
+      <h1 class="card-title">Maximum afstand</h1>
+      <div class="styled-select slate">
+        <select>
+          <option></option>
+        </select>
+      </div>
+      <h1 class="card-title">Maximum Prijs</h1>
+      <div class="styled-select slate">
+        <select>
+          <option></option>
+        </select>
+      </div>
+      <div class="button-container">
+        <button type="submit" class="main-button search-button">
+          <a class="main-button" href="/#">ZOEKEN</a>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-9">
+      <h2>Uw Resultaten :</h2>
+    </div>
+    <div class="col-3" style="display: flex; justify-content: center; align-items: center;"  >
+      <div class="button-container" >
+        <button type="submit" class="main-button search-button">
+          <a class="main-button" href="/auction-overview">OVERZICHT</a>
+        </button>
+      </div>
+    </div>
+  </div>
+    <div>
+    <app-auctions-list [selectedCategory]="selectedCategory"></app-auctions-list>  
+  </div>
+
+  
+
+</div>

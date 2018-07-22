@@ -1,0 +1,42 @@
+@import 'abstracts/helpers';
+@import 'abstracts/variables';
+
+.text-card {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+.contact-card {
+
+    a {
+        text-decoration: none;
+    }
+    .icon {
+        font-size: 50px;
+        color: #000000;
+
+        &:hover {
+            color: #697170;
+        }
+    }
+}
+
+
+.form-input {
+    border-radius: $input-border-radius;
+    border: $input-border-color;
+    width: 100%;
+    height: 40px;
+}
+
+.button-container {
+
+    margin-top: 30px;
+}
+
+
+
+.bottom-text {
+    text-align: right;
+}
